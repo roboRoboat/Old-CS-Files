@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Project Plan</title>
+<link rel="stylesheet" href="index2.css"/>
+</head>
+
+<body>
+<h1>Design Doc</h1>
+<p>This is the outline of my plan and progress of where I'm at and where I need to go in order to get my game of Concentration 
+completely finished.</p>
+
+<h2>Model</h2>
+<h3>Attributes of the Game</h3>
+	<ul>
+		<li>Timer: Tracks how long the game has gone on</li>
+		<li>Score: Tracks how many matches have been made so far</li>
+		<li>Grid: A yet to be decided grid of cards that all look the same when face down</li>
+		<li>Cards: A yet to be decided number of different cards, each of which needs a match</li>
+	</ul>
+<h3>Timer</h3>
+<p>I've tested out some basic timer functions, but haven't quite gotten one to work the way I want.<br>
+	The timer will start when the page loads and end when the game finshes. I would like to have page
+	fade out and display a large congratulations/condolences message with the user's time. It would also 
+	be neat to have a leaderboard...</p>
+
+<h3>Score</h3>
+	<p>This should be some fairly straightforward logic. What this will do is track how many matches the player has made so far.</p>
+	
+<h3>The Grid</h3>
+	<p>The grid will probably be a 4x4 table. Easier to program and easier to match the cards. We need to have an even number
+		of cards so that pairs can be made.</p>
+		
+<h3>Cards</h3>
+	<p>16 cards, and when face down, all look the same</p>
+	<h4>Functions/Events</h4>
+	<p class="list">
+		flipCard(); -- The most complicated bit, I think. This will need to have a few things 
+			<ul style="margin-left:50px">
+				<li>When clicked, a card flips</li>
+				<li>The card stays flipped until another card is flipped</li>
+				<li><b>If match</b></li>
+				<li>---Cards stay turned over</li>
+				<li><b>If no match</b></li>
+				<li>---Cards must stay turned over for a second, and then turn back face down</li>
+				<li><b>Have the basic flip animations figured out, just need to implement in the table</b></li>
+			</ul>
+	</p>
+	<p class="list">startTime(); -- This will start the timer. Will need to start the timer when the page is loaded, 
+		and end when game is done.</p> 
+	<p class="list">endTime(); -- May not need a separate function for endTime... </p>
+	<p class="list">countScore(); -- This funtion will keep a count of the user's current number of matches. </p>
+	<p class="list">endGame(); -- End the game, display congratulations message, log user score in scoreboard if possible.</p>
+	
+</body>
+</html>

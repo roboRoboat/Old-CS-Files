@@ -1,0 +1,130 @@
+﻿body {
+  	font-family: Arial, Helvetica, sans-serif; 
+  	margin: 30px;  
+  	background: #E3E3E3; 
+	}
+h1{
+	font-size:30px; 
+	color:#089ACF;
+	}
+h2{
+	font-size:20px; 
+	}
+h3{
+	font-size:15px; 
+	color:#089ACF;	
+	margin:0;  
+	}
+h4 {
+	font-size:15px;
+	margin-left:30px;  
+/*	}
+table{
+	width:50%;
+	border: 1; 
+	}
+tr, td {
+	height:100px;  
+  	border-collapse: collapse;
+  	margin: 0 25% 0 25%;
+  	text-align:center;
+	border: none;  	
+	border-collapse: collapse;
+	/*background-color:#feddff;
+	border: solid 2px #089ACF;
+	}
+thead{
+	text-align:center;
+	background-color:#fca5ff
+	}
+table img{
+	display:block;
+	width:100%; 
+	height:100%
+	}
+.allborders td, th {
+	border: solid 2px #089ACF;	
+	padding:3px; 
+	/*background-color:#feddff;
+	width:100px;
+	}
+.allborders tr{
+	height:80px; 
+	width:500px; 
+	}*/
+.unFlippedCard {
+	border: solid 2px #089ACF;	
+	padding:3px; 
+	background-color:black;
+	background-image:url('../Assignment03/GamePics/CardBack.png');
+	background-position:center; 
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+/*
+.starCard {
+	background-image:url('../Assignment03/GamePics/StarCard1.png');
+	background-size:100%;
+	background-position:center; 
+	background-repeat:no-repeat; 
+
+	}
+.circleCard {
+	background-image:url('../Assignment03/GamePics/CircleCard1.png');
+	background-position:center; 
+	background-size:100%;
+	background-repeat:no-repeat; 
+*/
+	}
+.centered {
+	text-align:center; 
+	vertical-align:middle;
+	align:center; 
+ 
+	}
+.list { margin-left:40px}
+.floatLft{float:left}
+#header {
+	text-align:center;
+	}
+	
+.newCard{
+	width:50px;
+	height:50px;
+	margin:10px; 
+	}
+.newCard > .front {
+	position:absolute;
+	transform: perspective( 500px ) rotateY( 0deg); 
+	background: #089ACF; width:50px; height:50px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+.newCard > .back {
+	position:absolute;
+	transform: perspective( 500px ) rotateY( 180deg ); 
+	background: #FF6600; width:50px; height:50px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+.newCardDEMO{
+	width:240px; 
+	height:200px;
+	margin:10px; 
+	float:left; 
+	}
+.newCardDEMO > .front {
+	position:absolute;
+	transform: perspective( 500px ) rotateY( 0deg); 
+	background: #089ACF; width:200px; height:240px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+.newCardDEMO > .back {
+	position:absolute; 
+	transform: perspective( 500px ) rotateY( 180deg); 
+	background: #feddff; width:200px; height:240px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+

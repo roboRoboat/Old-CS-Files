@@ -1,0 +1,41 @@
+﻿.newCard{
+	width:50px; 
+	height:50px;
+	margin:10px; 
+	float:left; 
+	}
+.newCard > .front {
+	position:absolute;
+	transform: perspective( 500px ) rotateY( 0deg); 
+	background: #089ACF; width:50px; height:50px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+.newCard > .back {
+	position:absolute; 
+	transform: perspective( 500px ) rotateY( 180deg); 
+	background: #feddff; width:50px; height:50px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+
+.newCardDEMO{
+	width:240px; 
+	height:200px;
+	margin:10px; 
+	float:left; 
+	}
+.newCardDEMO > .front {
+	position:absolute;
+	transform: perspective( 500px ) rotateY( 0deg); 
+	background: #089ACF; width:200px; height:240px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
+.newCardDEMO > .back {
+	position:absolute; 
+	transform: perspective( 500px ) rotateY( 180deg); 
+	background: #feddff; width:200px; height:240px; border-radius: 7px; 
+	backface-visibility: hidden; 
+	transition: transform .5s linear 0s;
+}
